@@ -18,7 +18,16 @@ pnpm check
 pnpm build
 ```
 
-This repository is currently a project foundation. Dependency installation and executable application configuration are intentionally deferred until the existing frontend is available in this repository.
+The frontend foundation is now implemented as a local mock-data demo. Backend services remain intentionally deferred: upload, transcription, retrieval, evidence verification, authentication, and persistence are not connected.
+
+## Frontend demo
+
+Run `pnpm dev` and open the Vite app. The demo includes:
+
+- A Verification Prism landing page.
+- Workspace, upload, lecture record, concept library, grounded quiz, settings, and 404 routes.
+- Local typed lecture, transcript, evidence, concept, quiz, and processing fixtures in `client/src/data/mockData.ts`.
+- A clear integration seam for the future procedures listed in [docs/API_CONTRACTS.md](docs/API_CONTRACTS.md).
 
 ## Folder overview
 
